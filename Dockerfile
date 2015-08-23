@@ -1,3 +1,8 @@
+# VERSION 1.0
+# AUTHOR:         Adrian Gonzalez Barbosa <adrian.gonzalez.barbosa@gmail.com>
+# DESCRIPTION:    Image with bright game panel, includes contained mysql
+# TO_RUN:         docker run -p 80:80 agonbar/bgpanel
+
 # set base os
 FROM phusion/baseimage:0.9.16
 
@@ -38,5 +43,3 @@ mv apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
 # Start MySQL and create database
 service mysql start && \
 mysql -e "create database brightgamepanel"
-
-# Still need to know hot to delete /var/www/bgpanel/install
