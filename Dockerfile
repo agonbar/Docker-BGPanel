@@ -33,10 +33,10 @@ a2enmod rewrite && \
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
 sed -i "s/short_open_tag = Off/short_open_tag = On/" /etc/php5/apache2/php.ini && \
 sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php5/apache2/php.ini && \
-mv apache-config.conf /etc/apache2/sites-enabled/000-default.conf \
+mv apache-config.conf /etc/apache2/sites-enabled/000-default.conf && \
 
 # Start MySQL
-service mysql start \
+service mysql start && \
 mysql -e "create database brightgamepanel"
 
 # Still need to know hot to delete /var/www/bgpanel/install
