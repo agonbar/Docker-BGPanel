@@ -1,0 +1,6 @@
+bgpanel:
+  image: 'agonbar/bgpanel:latest'
+  pid: host
+  ports:
+    - '80:80'
+  restart: always
