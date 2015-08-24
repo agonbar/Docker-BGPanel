@@ -4,12 +4,14 @@ Launches a Apache server with Bright Game Panel (and mysql)
 
 # Instructions
 
-Start the container with the 80 port open
+If you use tutum, just press this button:
+
+[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/?repo=https://github.com/agonbar/Docker-BGPanel)
+
+Using the normal docker commands, first run this
 ```
 docker run --name "bgppanel" -p 80:80 agonbar/bgpanel
 ```
-
-[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/?repo=https://github.com/agonbar/Docker-BGPanel)
 
 Then navigate to the server URL and finish the installation, once it asks to remove the install folder, restart the dock
 
